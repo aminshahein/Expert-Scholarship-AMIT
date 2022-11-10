@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+let towersHeight = [5,6,10,12,5,4,12,5,9,12,4,12];
+let max= Math.max(...towersHeight);
+var count = towersHeight.reduce(function(counter, value) {
+    return counter + (value === max);
+}, 0);
+document.write(`count of highest tower is ${count}`);
+
+    </script>
+</body>
+</html>
